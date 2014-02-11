@@ -5,15 +5,24 @@ tady to bude
 {% assign xml='/source/entity.md' %}
 
 <hr>
+obsah xml <br>
+{{xml}}
 
+<hr>
 
+include xml<br>
 {% include {{xml}} %}
 
+<hr>
+
+capture<br>
+{% capture file %}
+{% include {{xml}} %}
+{% endcapture %}
 
 <hr>
 
-{{block}}
+obsah file<br>
+{{file}}
 
-<hr>
 
-{{xml}}
