@@ -1,0 +1,17 @@
+{% if {{format}} != '' %}
+
+<hr>
+
+capture<br>
+{% capture file %}
+{% include {{format}} %}
+{% endcapture %}
+
+{{file | markdownify}}
+
+<hr>
+{% else %}
+
+<p>je to prazdny samostatna funkce</p>
+
+{% endif %}
