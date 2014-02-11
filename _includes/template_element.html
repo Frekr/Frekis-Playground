@@ -6,6 +6,8 @@ obsah xml <br>
 
 <hr><hr>
 
+{% if xml !='na' %}
+
 {% assign format={{xml}} %}
 
 format:{{format}}
@@ -20,6 +22,8 @@ capture<br>
 {{file | markdownify}}
 
 <hr>
+
+{%endif%}
 
 <hr>
 
