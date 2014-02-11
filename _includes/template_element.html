@@ -1,26 +1,8 @@
 <hr>
 {% assign format={{xml}} %}
-format:{{format}}
+{% include template_format.html %}
 
-{% if {{format}} != '' %}
-
-<hr>
-
-capture<br>
-{% capture file %}
-{% include {{format}} %}
-{% endcapture %}
-
-{{file | markdownify}}
-
-<hr>
-{% else %}
-
-<p>je to prazdny verze2 djiahjg</p>
-
-{% endif %}
-
-<hr>
+<hr><hr>
 
 {% if {{yml}} != '' %}
 
