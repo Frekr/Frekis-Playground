@@ -4,26 +4,7 @@
 
 <hr><hr>
 
-{% if {{yml}} != '' %}
-
 {% assign format={{yml}} %}
+{% include template_format.html %}
 
-format:{{format}}
-
-<hr>
-
-capture<br>
-{% capture file %}
-{% include {{yml}} %}
-{% endcapture %}
-
-{{file | markdownify}}
-
-<hr>
-{% else %}
-
-<p>je to prazdny verze 2</p>
-
-{% endif %}
-
-<hr>
+<hr><hr>
