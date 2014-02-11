@@ -6,15 +6,15 @@ tady to bude
 
 <hr>
 
-{% capture xmlblock %}
+{% capture block %}
 {% include {{xml}} %}
 {% endcapture %}
 
-{% xmlblock | markdownify %}
+{% block | markdownify %}
 
 <hr>
 
-{{xmlblock}}
+{{block}}
 
 <hr>
 
