@@ -2,16 +2,12 @@
 
 {% if {{format}} != '' %}
 
-<hr>
-
 capture<br>
 {% capture file %}
 {% include {{format}} %}
 {% endcapture %}
 
 {{file | markdownify}}
-
-<hr>
 
 {% else %}
 
