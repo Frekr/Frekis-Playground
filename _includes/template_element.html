@@ -6,7 +6,11 @@ obsah xml <br>
 
 <hr><hr>
 
-{% if {{xml}} !='' %}
+{% if {{xml}} =='' %}
+
+<p>je to prazdny </p>
+
+{% else %}
 
 {% assign format={{xml}} %}
 
