@@ -1,0 +1,34 @@
+<hr>
+obsah xml <br>
+{{xml}}
+{{yml}}
+{{ant}}
+
+<hr>
+
+capture<br>
+{% capture file %}
+{% include {{xml}} %}
+{% endcapture %}
+
+{{file | markdownify}}
+
+<hr>
+
+capture<br>
+{% capture file %}
+{% include {{yml}} %}
+{% endcapture %}
+
+{{file | markdownify}}
+
+<hr>
+
+capture<br>
+{% capture file %}
+{% include {{ant}} %}
+{% endcapture %}
+
+{{file | markdownify}}
+
+<hr>
