@@ -25,4 +25,27 @@ capture<br>
 
 <hr>
 
+{% if {{yml}} == '' %}
 
+<p>je to prazdny </p>
+
+{% else %}
+
+{% assign format={{xml}} %}
+
+format:{{format}}
+
+<hr>
+
+capture<br>
+{% capture file %}
+{% include {{xml}} %}
+{% endcapture %}
+
+{{file | markdownify}}
+
+<hr>
+
+{% endif %}
+
+<hr>
