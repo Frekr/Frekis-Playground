@@ -4,8 +4,10 @@
 {% assign yml='/source/entity.md' %}
 {% assign ant='/source/field.md' %}
 
-{{xml}}
-{{yml}}
-{{ant}}
+{% if xml!='' %}
+neni to prazdny
+{% else %}
+je to prazdny
+{% endif %}
 
 {% include template_element.html%}
