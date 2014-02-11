@@ -1,10 +1,6 @@
 <hr>
 
-{% if {{xml}} == '' %}
-
-<p>je to prazdny </p>
-
-{% else %}
+{% if {{xml}} != '' %}
 
 {% assign format={{xml}} %}
 
@@ -20,6 +16,9 @@ capture<br>
 {{file | markdownify}}
 
 <hr>
+{% else %}
+
+<p>je to prazdny </p>
 
 {% endif %}
 
