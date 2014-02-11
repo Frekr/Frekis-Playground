@@ -10,7 +10,7 @@ format:{{format}}
 
 capture<br>
 {% capture file %}
-{% include {{xml}} %}
+{% include {{format}} %}
 {% endcapture %}
 
 {{file | markdownify}}
