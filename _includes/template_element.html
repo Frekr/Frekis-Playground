@@ -4,7 +4,7 @@ obsah xml <br>
 {{yml}}
 {{ant}}
 
-<hr>
+<hr><hr>
 
 capture<br>
 {% capture file %}
@@ -12,6 +12,8 @@ capture<br>
 {% endcapture %}
 
 {{file | markdownify}}
+
+<hr>
 
 <hr>
 
@@ -24,11 +26,15 @@ capture<br>
 
 <hr>
 
+<hr>
+
 capture<br>
 {% capture file %}
 {% include {{ant}} %}
 {% endcapture %}
 
 {{file | markdownify}}
+
+<hr>
 
 <hr>
