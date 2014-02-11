@@ -9,6 +9,7 @@ tady to bude
 {% capture xmlblock %}
 {% include {{xml}} %}
 {% endcapture %}
+{% xmlblock | markdownify %}
 
 <hr>
 
