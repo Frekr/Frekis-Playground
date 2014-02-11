@@ -12,11 +12,6 @@ obsah xml <br>
 
 <hr>
 
-include xml<br>
-{% include {{xml}} %}
-
-<hr>
-
 capture<br>
 {% capture file %}
 {% include {{xml}} %}
@@ -41,10 +36,3 @@ capture<br>
 {% endcapture %}
 
 {{file | markdonify}}
-
-<hr>
-
-obsah file<br>
-{{file}}
-
-
