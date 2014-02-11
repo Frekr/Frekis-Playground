@@ -24,11 +24,7 @@ capture<br>
 
 <hr>
 
-{% if {{yml}} == '' %}
-
-<p>je to prazdny </p>
-
-{% else %}
+{% if {{yml}} != '' %}
 
 {% assign format={{yml}} %}
 
@@ -44,6 +40,9 @@ capture<br>
 {{file | markdownify}}
 
 <hr>
+{% else %}
+
+<p>je to prazdny </p>
 
 {% endif %}
 
