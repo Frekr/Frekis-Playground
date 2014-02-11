@@ -26,6 +26,24 @@ capture<br>
 
 <hr>
 
+capture<br>
+{% capture file %}
+{% include {{xml}} %}
+{% endcapture %}
+
+{{file | markdonify}}
+
+<hr>
+
+capture<br>
+{% capture file %}
+{% include {{xml}} %}
+{% endcapture %}
+
+{{file | markdonify}}
+
+<hr>
+
 obsah file<br>
 {{file}}
 
