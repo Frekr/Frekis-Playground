@@ -1,1 +1,21 @@
 tady to bude
+
+
+<!-- segment -->
+{% assign xml='source/entity.md' %}
+{% assign yml='source/entity.md' %}
+{% assign annot='source/entity.md' %}
+{% assign picture='source/deathmonkey.gif' %}
+
+<div class="element">
+
+<h2>Elementy</h2>
+
+{% capture xml-block %}
+{% include {{xml}} %}
+{% endcapture %}
+{% xml-block | markdownify %}
+
+<img src="{{picture}}" alt="Now you die">
+
+</div>
