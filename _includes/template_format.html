@@ -2,12 +2,12 @@
 
 {% if {{format}} != '' %}
 
-capture<br>
-{% capture file %}
-{% include {{format}} %}
-{% endcapture %}
-
-{{file | markdownify}}
+<div clas="element">
+  {% capture file %}
+  {% include {{format}} %}
+  {% endcapture %}
+  {{file | markdownify}}
+</div>
 
 {% else %}
 
