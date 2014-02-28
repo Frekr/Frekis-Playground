@@ -36,7 +36,7 @@ link {{isLink}}<br>
 moe {{isMore}}<br>
 pho {{isPhp}}<br>
 yml {{isYml}}<br>
-xml {isXml}}<br>
+xml {{isXml}}<br>
 
 
     <div class="row">
@@ -46,7 +46,7 @@ xml {isXml}}<br>
           <dd {if isActive=='yml'}class="active"{% endif %}><a href="#panel2-2">YML</a></dd>
           <dd {if isActive=='php'}class="active"{% endif %}><a href="#panel2-3">Annotations</a></dd>
           <dd {if isActive=='more'}class="active"{% endif %}><a href="#panel2-4">More info</a></dd>
-          {if isLink}<dd {% if isActive=='link' %}class="active"{% endif %}><a href="#panel2-5">Links</a></dd>{% endif %}
+          {%if isLink %}<dd {% if isActive=='link' %}class="active"{% endif %}><a href="#panel2-5">Links</a></dd>{% endif %}
         </dl>
         <div class="tabs-content">
             {% if isXml %}
@@ -80,6 +80,7 @@ xml {isXml}}<br>
            {% endif %}
         </div>
       </div>
+      
       <div class="large-5 columns">
         <img alt="Model" src="http://www.orm-designer.com/uploads/thumbs/61739-no-more-double-work-359x221.jpg" style="margin-top: 2.7rem;" />
       </div>
