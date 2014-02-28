@@ -10,31 +10,31 @@
 {% if usedtabs contains 'link' %}
   {% assign isActive='link' %}
   {% assign isLink='true' %}
-  {% capture panelIdLink %}panel{{GlobalElementCounter}}-5'{% endcapture %}
+  {% capture panelIdLink %}panel{{GlobalElementCounter}}-5{% endcapture %}
 {% endif %}
 
 {%if usedtabs contains 'more' %}
   {% assign isActive='more'%}
   {% assign isMore='true' %}
-  {% capture panelIdMore %}panel{{GlobalElementCounter}}-4'{% endcapture %}
+  {% capture panelIdMore %}panel{{GlobalElementCounter}}-4{% endcapture %}
 {% endif %}
 
 {%if usedtabs contains 'php' %}
   {% assign isActive='php' %}
   {% assign isPhp='true' %}
-  {% capture panelIdPhp %}panel{{GlobalElementCounter}}-3'{% endcapture %}
+  {% capture panelIdPhp %}panel{{GlobalElementCounter}}-3{% endcapture %}
 {% endif %}
 
 {%if usedtabs contains 'yml' %}
   {% assign isActive='yml' %}
   {% assign isYml='true' %}
-  {% capture panelIdYml %}panel{{GlobalElementCounter}}-2'{% endcapture %}
+  {% capture panelIdYml %}panel{{GlobalElementCounter}}-2{% endcapture %}
 {% endif %}
 
 {%if usedtabs contains 'xml' %}
   {% assign isActive='xml' %}
   {% assign isXml='true' %}
-  {% capture panelIdXml %}panel{{GlobalElementCounter}}-1'{% endcapture %}
+  {% capture panelIdXml %}panel{{GlobalElementCounter}}-1{% endcapture %}
 {% endif %}
 
 Parameter {{usedtabs}}<br>
@@ -44,6 +44,12 @@ moe {{isMore}}<br>
 pho {{isPhp}}<br>
 yml {{isYml}}<br>
 xml {{isXml}}<br>
+panelIdXml {{panelIdXml}}<br/>
+panelIdYml {{panelIdYml}}<br/>
+panelIdPhp {{panelIdPhp}}<br/>
+panelIdMore {{panelIdMore}}<br/>
+panelIdLink {{panelIdLink}}<br/>
+
 GlobalElementCounter {{GlobalElementCounter}}<br/>
 {GlobalElementCounter" "{{GlobalElementCounter}}"<br/>
 
