@@ -6,27 +6,27 @@
  {% assign isYml='false' %}
  {% assign isXml='false' %}
 
-{% if contains... 'link' %}
+{% if usedtabs contains 'link' %}
   {% assign isActive='link' %}
   {% assign isLink='true' %}
 {% endif %}
 
-{%if contains... 'more' %}
+{%if usedtabs contains 'more' %}
   {% assign isActive='more'%}
   {% assign isMore='true' %}
 {% endif %}
 
-{%if contains... 'php' %}
+{%if usedtabs contains 'php' %}
   {% assign isActive='php' %}
   {% assign isPhp='true' %}
 {% endif %}
 
-{%if contains... 'yml' %}
+{%if usedtabs contains 'yml' %}
   {% assign isActive='yml' %}
   {% assign isYml='true' %}
 {% endif %}
 
-{%if contains... 'xml' %}
+{%if usedtabs contains 'xml' %}
   {% assign isActive='xml' %}
   {% assign isXml='true' %}
 {% endif %}
