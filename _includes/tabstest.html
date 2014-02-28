@@ -38,6 +38,14 @@ yml {{isYml}}<br>
 xml {{isXml}}<br>
 
 
+test[
+{% if isActive=='xml' %}class="active"{% endif %}
+]
+
+test[
+{%if isActive=='xml'%}class="active"{%endif%}
+]
+
    <div class="row">
       <div class="large-7 columns">
         
@@ -46,7 +54,7 @@ xml {{isXml}}<br>
           <dd {% if isActive=='yml' %}class="active"{% endif %}><a href="#panel2-2">YML</a></dd>
           <dd {% if isActive=='php' %}class="active"{% endif %}><a href="#panel2-3">Annotations</a></dd>
           <dd {% if isActive=='more' %}class="active"{% endif %}><a href="#panel2-4">More info</a></dd>
-          {%if isLink=='true' %}<dd {% if isActive=='link' %}class="active"{% endif %}><a href="#panel2-5">Links</a></dd>{% endif %}
+          {% if isLink=='true' %}<dd {% if isActive=='link' %}class="active"{% endif %}><a href="#panel2-5">Links</a></dd>{% endif %}
         </dl>
         
         <div class="tabs-content">
