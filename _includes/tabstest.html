@@ -4,34 +4,37 @@
  {% assign isYml='false' %}
  {% assign isXml='false' %}
 
+{% increment GlobalElementCounter %}
+
+
 {% if usedtabs contains 'link' %}
   {% assign isActive='link' %}
   {% assign isLink='true' %}
-  {% assign panelIdLink='panel1-5' %}
+  {% assign panelIdLink='panel{{GlobalElementCounter}}-5' %}
 {% endif %}
 
 {%if usedtabs contains 'more' %}
   {% assign isActive='more'%}
   {% assign isMore='true' %}
-  {% assign panelIdmore='panel1-4' %}
+  {% assign panelIdMore='panel{{GlobalElementCounter}}-4' %}
 {% endif %}
 
 {%if usedtabs contains 'php' %}
   {% assign isActive='php' %}
   {% assign isPhp='true' %}
-  {% assign panelIdPhp='panel1-3' %}
+  {% assign panelIdPhp='panel{{GlobalElementCounter}}-3' %}
 {% endif %}
 
 {%if usedtabs contains 'yml' %}
   {% assign isActive='yml' %}
   {% assign isYml='true' %}
-  {% assign panelIdYml='panel1-2' %}
+  {% assign panelIdYml='panel{{GlobalElementCounter}}-2' %}
 {% endif %}
 
 {%if usedtabs contains 'xml' %}
   {% assign isActive='xml' %}
   {% assign isXml='true' %}
-  {% assign panelIdXml='panel1-1' %}
+  {% assign panelIdXml='panel{{GlobalElementCounter}}-1' %}
 {% endif %}
 
 Parameter {{usedtabs}}<br>
