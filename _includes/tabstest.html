@@ -7,26 +7,31 @@
 {% if usedtabs contains 'link' %}
   {% assign isActive='link' %}
   {% assign isLink='true' %}
+  {% assign panelIdLink='panel1-5' %}
 {% endif %}
 
 {%if usedtabs contains 'more' %}
   {% assign isActive='more'%}
   {% assign isMore='true' %}
+  {% assign panelIdmore='panel1-4' %}
 {% endif %}
 
 {%if usedtabs contains 'php' %}
   {% assign isActive='php' %}
   {% assign isPhp='true' %}
+  {% assign panelIdPhp='panel1-3' %}
 {% endif %}
 
 {%if usedtabs contains 'yml' %}
   {% assign isActive='yml' %}
   {% assign isYml='true' %}
+  {% assign panelIdYml='panel1-2' %}
 {% endif %}
 
 {%if usedtabs contains 'xml' %}
   {% assign isActive='xml' %}
   {% assign isXml='true' %}
+  {% assign panelIdXml='panel1-1' %}
 {% endif %}
 
 Parameter {{usedtabs}}<br>
@@ -41,16 +46,16 @@ xml {{isXml}}<br>
       <div class="large-7 columns">
         
         <dl class="tabs" data-tab>
-          {% if isXml == 'true' %}<dd {% if isActive == 'xml' %}class="active"{% endif %}><a href="#panel2-1">XML</a></dd>{% endif %}
-          {% if isYml == 'true' %}<dd {% if isActive == 'yml' %}class="active"{% endif %}><a href="#panel2-2">YML</a></dd>{% endif %}
-          {% if isPhp == 'true' %}<dd {% if isActive == 'php' %}class="active"{% endif %}><a href="#panel2-3">Annotations</a></dd>{% endif %}
-          {% if isMore == 'true' %}<dd {% if isActive == 'more' %}class="active"{% endif %}><a href="#panel2-4">More info</a></dd>{% endif %}
-          {% if isLink == 'true' %}<dd {% if isActive == 'link' %}class="active"{% endif %}><a href="#panel2-5">Links</a></dd>{% endif %}
+          {% if isXml == 'true' %}<dd {% if isActive == 'xml' %}class="active"{% endif %}><a href="#{{panelIdXml}}">XML</a></dd>{% endif %}
+          {% if isYml == 'true' %}<dd {% if isActive == 'yml' %}class="active"{% endif %}><a href="#{{panelIdYml}}">YML</a></dd>{% endif %}
+          {% if isPhp == 'true' %}<dd {% if isActive == 'php' %}class="active"{% endif %}><a href="#{{panelIdPhp}}">Annotations</a></dd>{% endif %}
+          {% if isMore == 'true' %}<dd {% if isActive == 'more' %}class="active"{% endif %}><a href="#{{panelIdMore}}">More info</a></dd>{% endif %}
+          {% if isLink == 'true' %}<dd {% if isActive == 'link' %}class="active"{% endif %}><a href="#{{panelIdLink}}">Links</a></dd>{% endif %}
         </dl>
         
         <div class="tabs-content">
             {% if isXml == 'true' %}
-                <div class="content active" id="panel2-1">
+                <div class="content active" id="{{panelIdXml}}">
                     <pre><code data-language="python">def openFile(path):
                     file = open(path, "r")
                     content = file.read()
@@ -59,22 +64,22 @@ xml {{isXml}}<br>
                 </div>
             {% endif %}
             {% if isYml == 'true' %}
-                <div class="content" id="panel2-2">
+                <div class="content" id="{{panelIdYml}}">
                     <p>Second panel content goes here...</p>
                 </div>
            {% endif %}
            {% if isPhp == 'true' %}
-                <div class="content" id="panel2-3">
+                <div class="content" id="{{panelIdPhp}}">
                     <p>Third panel content goes here...</p>
                 </div>
            {% endif %}
            {% if isMore == 'true' %}
-                <div class="content" id="panel2-4">
+                <div class="content" id="{{panelIdMore}}">
                     <p>Fourth panel content goes here...</p>
                 </div>
            {% endif %}
            {% if isLink == 'true' %}
-                <div class="content" id="panel2-5">
+                <div class="content" id="{{panelIdLink}}">
                     <p>Fifth panel content goes here...</p>
                 </div>
            {% endif %}
