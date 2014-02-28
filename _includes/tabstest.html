@@ -10,31 +10,31 @@
 {% if usedtabs contains 'link' %}
   {% assign isActive='link' %}
   {% assign isLink='true' %}
-  {% assign panelIdLink='panel{{GlobalElementCounter}}-5' %}
+  {% capture panelIdLink %}panel{{GlobalElementCounter}}-5'{% endcapture %}
 {% endif %}
 
 {%if usedtabs contains 'more' %}
   {% assign isActive='more'%}
   {% assign isMore='true' %}
-  {% assign panelIdMore='panel{{GlobalElementCounter}}-4' %}
+  {% capture panelIdMore %}panel{{GlobalElementCounter}}-4'{% endcapture %}
 {% endif %}
 
 {%if usedtabs contains 'php' %}
   {% assign isActive='php' %}
   {% assign isPhp='true' %}
-  {% assign panelIdPhp='panel{{GlobalElementCounter}}-3' %}
+  {% capture panelIdPhp %}panel{{GlobalElementCounter}}-3'{% endcapture %}
 {% endif %}
 
 {%if usedtabs contains 'yml' %}
   {% assign isActive='yml' %}
   {% assign isYml='true' %}
-  {% assign panelIdYml='panel{{GlobalElementCounter}}-2' %}
+  {% capture panelIdYml %}panel{{GlobalElementCounter}}-2'{% endcapture %}
 {% endif %}
 
 {%if usedtabs contains 'xml' %}
   {% assign isActive='xml' %}
   {% assign isXml='true' %}
-  {% assign panelIdXml='panel{{GlobalElementCounter}}-1' %}
+  {% capture panelIdXml %}panel{{GlobalElementCounter}}-1'{% endcapture %}
 {% endif %}
 
 Parameter {{usedtabs}}<br>
