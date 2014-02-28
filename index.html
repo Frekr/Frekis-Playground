@@ -8,3 +8,13 @@ cisto
 {% assign usedtabs='desc, xml, yml, php, more, links' %}
 
 {{usedtabs}}
+
+{% if usedtabs contains 'xml' %}
+
+je tam xml
+
+{% else %}
+
+neni tam xml
+
+{% endif %}
