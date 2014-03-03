@@ -82,9 +82,11 @@
         </div>
       </div>
       
-      <div class="large-5 columns">
-        <img alt="Model" src="{{imgsource}}{{imgfile}}" style="margin-top: 2.7rem;" />
-      </div>
+      {% if imgfile != '' %}
+         <div class="large-5 columns">
+            <img alt="Model" src="{{imgsource}}{{imgfile}}" style="margin-top: 2.7rem;" />
+         </div>
+      {% endif %}
     </div>
 
  
